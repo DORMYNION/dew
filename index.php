@@ -10,7 +10,7 @@
     <title>DEW - Preparing You for Opportunities</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -39,8 +39,11 @@
 	</div><!-- /Loader_form -->
 
     <header>
-        <div id="logo_home">
-            <h1><a href="index.html" title="Dew">Dew - Preparing You for Opportunities</a></h1>
+        <div class="mx-auto d-block">
+        <div id="logo_home" class="">
+            <h2><a href="index.html" title="Dew">Dew - developing the workforce for the future.</a></h2>
+        </div>
+            
         </div>
         
         <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="javascript:void(0);"><span>Menu mobile</span></a>
@@ -53,15 +56,15 @@
         </nav>
     </header><!-- /header -->
 
-    <div class="intro_txt animated fadeInUp">
-        <h2>DEW</h2>
-        <p>Preparing You for Opportunities!</p>
+    <div class="intro_txt text-center animated fadeInUp">
+        <h2>...developing the work-force for the future.</h2>
+        <p>We have the goal of fostering the technical and entrepreneurial skills needed by young people to make the world a better place</p>
     </div><!-- /intro_txt -->
     
     <video id="my-video" class="video" loop muted autoplay playsinline>
-      <source src="media/demo.mp4" type="video/mp4">
-      <source src="media/demo.ogv" type="video/ogg">
-      <source src="media/demo.webm" type="video/webm">
+      <!-- <source src="media/demo.mp4" type="video/mp4"> -->
+      <!-- <source src="media/demo.ogv" type="video/ogg">
+      <source src="media/demo.webm" type="video/webm"> -->
 	</video><!-- /video -->
     <div class="video_fallback"></div>
 
@@ -281,55 +284,57 @@
                         <div class="row">
                             <div class="col-lg-8">
                                 <h2>Welcome to Dew</h2>
-                                <p class="lead">An mei sadipscing dissentiet, eos ea partem viderer facilisi. Brute nostrud democritum in vis, nam ei erat zril mediocrem. No postea diceret vix. Mei eu scripta dolorum voluptatibus, id omnes repudiare pri.</p>
+                                <p class="">As the world changes all around us, acquiring technical skills is what brings opportunity and the promise of education is what offers hope. Who will teach and nurture these world changers of tomorrow, these global problem solvers? We will. Together with our education, instructor, training and employment partners we’ve made a commitment to developing the workforce of the future. Join us as we change the world</p>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_1">
-                                            <span></span>
-                                            <h3>Responsive site design</h3>
-                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_2">
-                                            <span></span>
-                                            <h3>Web site check</h3>
-                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
-                                        </div>
-                                    </div>
-                                    </div><!-- /row -->
-                                    <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_3">
-                                            <h3>Email campaigns</h3>
-                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_4">
-                                            <h3>Seo optimization</h3>
-                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
-                                        </div>
-                                    </div>
-                                </div><!-- /row -->
-                                  <hr>
+                                <hr>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="about_info">
                                                 <i class="pe-7s-news-paper"></i>
-                                                <h4>A brief about Quote<span>Suas summo id sed, erat erant oporteat cu pri.</span></h4>
-                                                <p>Cum iusto nonumes dignissim ad, movet vocent ceteros nec ut. Eu putent utroque ius, ei usu purto doctus, ludus nostrud consectetuer ex pri. Maiorum petentium similique duo id. Sea ex nostro offendit, ius sumo electram theophrastus et. Nam eu dolore aliquid laoreet, ei eos tacimates assueverit inciderint. His deserunt recteque consequat in. Vis mucius virtute consequat ad, suavitate interesset an mei, oporteat temporibus at sea.</p>
+                                                <h4>Our Vision<span> </span></h4>
+                                                <p>Dew as the goal of fostering the technical and entrepreneurial skills needed by young people to make the world a better place.</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="about_info">
                                                 <i class="pe-7s-light"></i>
-                                                <h4>Mission<span>Suas summo id sed, erat erant oporteat cu pri.</span></h4>
-                                                <p>Cum iusto nonumes dignissim ad, movet vocent ceteros nec ut. Eu putent utroque ius, ei usu purto doctus, ludus nostrud consectetuer ex pri. Maiorum petentium similique duo id. Sea ex nostro offendit, ius sumo electram theophrastus et. Nam eu dolore aliquid laoreet, ei eos tacimates assueverit inciderint. His deserunt recteque consequat in. Vis mucius virtute consequat ad, suavitate interesset an mei, oporteat temporibus at sea.</p>
+                                                <h4>Our Mission<span> </span></h4>
+                                                <p>By empowering individuals and organizations with problem-solving skills and transformative technologies, we will help bring the benefits of digitization to one billion people by 2025.</p>
                                             </div>
                                         </div>
                                     </div><!-- /row -->  
+                                    <hr>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="box_feat" id="icon_4">
+                                            <h3>Digital Marketing/SEO</h3>
+                                            <p>In today's connected world more and more people are looking for products, services, and solutions online. Just a quick search on Google on their phone or tablet - and the results to their query pop up on their screen instantly. Is your business coming up on the top of these results? If not, you are missing out on a potentially huge opportunity and letting your competitors take business away from you. </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box_feat" id="icon_2">
+                                            <span></span>
+                                            <h3>Web Development</h3>
+                                            <p>So, you’re interested in learning web development and becoming a web developer? First of all, congratulations. You’ve made a great choice. And since you’re reading this, you may already be an active member of a Facebook group, subreddit, or other online coding community. Which is a great place to start, and to find support throughout your chosen pursuit.</p>
+                                        </div>
+                                    </div>
+                                    </div><!-- /row -->
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="box_feat" id="icon_1">
+                                            <span></span>
+                                            <h3>Mobile App Developmet</h3>
+                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box_feat" id="icon_3">
+                                            <h3>Certification</h3>
+                                            <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
+                                        </div>
+                                    </div>
+                                </div><!-- /row -->
+                                  
                             </div><!-- /col -->
                             
                             <aside class="col-lg-4">
@@ -425,7 +430,6 @@
                                         <ul>
                                             <li><a href="#"><i class="icon-facebook"></i>Facebook</a></li>
                                             <li><a href="#"><i class="icon-twitter"></i>Twitter</a></li>
-                                            <li><a href="#"><i class="icon-google"></i>Google plus</a></li>
                                             <li><a href="#"><i class="icon-instagram"></i>Instagram</a></li>
                                         </ul>
                                     </div><!-- /follow -->
@@ -492,7 +496,7 @@
     <div id="additional_links">
         <ul>
             <li>Copyrright © 2019 Dew</li>
-            <li><a href="#0" class="animated_link">Contact</a></li>
+            <li><a href="#tab_3" class="animated_link">Contact</a></li>
             <li><a href="index_2.html" class="animated_link">FAQs</a></li>
 			<li><a href="index_3.html" class="animated_link">Privacy Policy</a></li>
             <li><a href="index_4.html" class="animated_link">Term of Use</a></li>
