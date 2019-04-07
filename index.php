@@ -99,7 +99,7 @@
                                         <div id="progressbar"></div>
                                     </div><!-- /top-wizard -->
 
-                                    <form name="example-1" id="wrapped" method="POST">
+                                    <form name="dew" id="wrapped" method="POST" onsubmit="insert_value()">
                                         <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                         <div id="middle-wizard">
                                             <div class="step">
@@ -229,14 +229,14 @@
                                                    
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
-                                                            <input type="text" name="firstname" class="required form-control" placeholder="First name">
+                                                            <input type="text" id="firstname" name="firstname" class="required form-control" placeholder="First name">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input type="text" name="lastname" class="required form-control" placeholder="Last name">
+                                                            <input type="text" id="lastname" name="lastname" class="required form-control" placeholder="Last name">
                                                         </div>
                                                         <div class="form-group select">
                                                             <div class="styled-select">
-                                                                <select class="required" name="select_3">
+                                                                <select class="required" id="select_3" name="select_3">
                                                                     <option value="" selected>Gender</option>
                                                                     <option value="Female">Female</option>
                                                                     <option value="Male">Male</option>
@@ -247,13 +247,13 @@
 
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
-                                                            <input type="email" name="email" class="required form-control" placeholder="Your Email">
+                                                            <input type="email" id="email" name="email" class="required form-control" placeholder="Your Email">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input type="text" name="telephone" class="required form-control" placeholder="Your Telephone">
+                                                            <input type="text" id="telephone" name="telephone" class="required form-control" placeholder="Your Telephone">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input type="date" name="age" class="required form-control" placeholder="">
+                                                            <input type="date" id="age" name="age" class="required form-control" placeholder="">
                                                         </div>
                                                     </div><!-- /col-sm-6 -->
                                                 </div><!-- /row -->
@@ -270,7 +270,7 @@
                                         <div id="bottom-wizard">
                                             <button type="button" name="backward" class="backward">Backward </button>
                                             <button type="button" name="forward" class="forward">Forward</button>
-                                            <button type="submit" name="process" class="submit">Submit</button>
+                                            <button type="submit" name="submit" class="submit">Submit</button>
                                         </div><!-- /bottom-wizard -->
                                     </form>
                                 </div><!-- /Wizard container -->
@@ -861,7 +861,32 @@ Dispute Resolution. Please read this Arbitration Agreement carefully. It is part
   type="text/javascript"></script>
     <script src="js/mapmarker.jquery.js"></script>
     <script src="js/mapmarker_func.jquery.js"></script>
-    
+
+    <script>
+// var script_url = "https://script.google.com/macros/s/AKfycbwvnbmzgfyA_B4puFWukNHsQIzzlxcrNExpD0NWF2ebSgpVRw/exec";
+//   function insert_value() {
+//       var firstname = $("firstname").val(); 
+//       var lastname = $("#lastname").val(); 
+//       var email = $("#email").val(); 
+//       var telephone = $("#telephone").val(); 
+//       var age = $("#age").val(); 
+//       var status = $("#select_1").val(); 
+
+//       var url = script_url + "?callback=ctrlq&firstname=" + firstname + "&lastname=" + lastname + "&telephone=" + telephone + "&email=" + email +  "&age=" + age +  "&status=" + status +     "&action=insert";
+//       var request = jQuery.ajax({
+//           crossDomain: true,
+//           url: url,
+//           method: "GET",
+//           dataType: "jsonp"
+//       });
+//       console.log(url);
+//       $("#resetForm").reset();
+//   }
+//   function ctrlq(e) {
+//       alert('Congrats! Registered Successfully')
+//   }
+</script>
+
 </body>
 
 </html>

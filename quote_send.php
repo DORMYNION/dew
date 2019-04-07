@@ -27,7 +27,7 @@
     
 	<script type="text/javascript">
     function delayedRedirect(){
-        window.location = "index.html"
+        window.location = "index.php"
     }
     </script>
 
@@ -37,28 +37,24 @@
 						$mail = $_POST['email'];
 
 						/*$subject = "".$_POST['subject'];*/
-						$to = "test@domain.com";		/* YOUR EMAIL HERE */
+						$to = "dlorunfemi@gmail.com";		/* YOUR EMAIL HERE */
 						$subject = "Quotation from QUOTE";
 						$headers = "From: Quotation from QUOTE <noreply@yourdomain.com>";
 						$message = "DETAILS\n";
-						$message .= "\n1) What is your budget? " . $_POST['question_1'] . "\n";
-						$message .= "\n2) What your poject need?\n" ;
+						$message .= "\n1) What do you do? " . $_POST['select_1'] . "\n";
+						$message .= "\n2) How did you hear about us?\n" ;
 						foreach($_POST['question_2'] as $value) 
 							{ 
 							$message .=   "- " .  trim(stripslashes($value)) . "\n"; 
 							};
 						$message .= "Additional info: " . $_POST['addtional_info'];
-						$message .= "\n\n3) Answers to the following questions" ;
-						$message .= "\nIf you already have an hosting plan, please define: " . $_POST['select_1'];
-						$message .= "\nIf you need an hosting plan, please define which one: " . $_POST['select_2'];
-						$message .= "\nIf you need a newsletter campaign, please define the provider you prefer: " . $_POST['select_3'];
-						$message .= "\n\n4) User personal details" ;
-						$message .= "\nCompany name: " . $_POST['company_name'];
+						$message .= "\n\n3) User personal details" ;
+						// $message .= "\nCompany name: " . $_POST['company_name'];
 						$message .= "\nName: " . $_POST['firstname'];
 						$message .= "\nLast Name: " . $_POST['lastname'];
 						$message .= "\nEmail: " . $_POST['email'];
 						$message .= "\nTelephone " . $_POST['telephone'];
-						$message .= "\nCountry: " . $_POST['country'];
+						$message .= "\Age: " . $_POST['age'];
 						$message .= "\nTerms and conditions accepted: " . $_POST['terms'] . "\n";
 												
 						//Receive Variable
@@ -67,7 +63,7 @@
 						//Confirmation page
 						$user = "$mail";
 						$usersubject = "Thank You";
-						$userheaders = "From: info@quote.com\n";
+						$userheaders = "From: dlorunfemi@gmail.com\n";
 						/*$usermessage = "Thank you for your time. Your quotation request is successfully submitted.\n"; WITH OUT SUMMARY*/
 						//Confirmation page WITH  SUMMARY
 						$usermessage = "Thank you for your time. Your quotation request is successfully submitted. We will reply shortly.\n\nBELOW A SUMMARY\n\n$message"; 
@@ -88,5 +84,7 @@
 <h4><span>Request successfully sent!</span>Thank you for your time</h4>
 <small>You will be redirect back in 5 seconds.</small>
 </div>
+
+
 </body>
 </html>

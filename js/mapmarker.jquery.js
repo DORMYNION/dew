@@ -16,7 +16,7 @@
 
 	$.fn.mapmarker.defaults = {
 		zoom	: 8,
-		center	: 'United States',
+		center	: 'Nigeria',
 		markers	: defaultMarkers
 	}
 

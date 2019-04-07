@@ -27,7 +27,7 @@
     
 	<script type="text/javascript">
     function delayedRedirect(){
-        window.location = "../index.html"
+        window.location = "../index.php"
     }
     </script>
 
@@ -35,7 +35,7 @@
 <body onLoad="setTimeout('delayedRedirect()', 8000)" style="background-color:#fff;">
 <?php
 	
-$question_1 = $_POST['question_1'];
+// $question_1 = $_POST['question_1'];
 // Check the values from checkbox and POST them to email
 if (isset($_POST["question_2"]) && !empty($_POST["question_2"]))
 	{
@@ -45,14 +45,14 @@ if (isset($_POST["question_2"]) && !empty($_POST["question_2"]))
 
 $addtional_info = $_POST['addtional_info'];
 $select_1 = $_POST['select_1'];
-$select_2 = $_POST['select_2'];
-$select_3 = $_POST['select_3'];
-$company_name = $_POST['company_name'];
+// $select_2 = $_POST['select_2'];
+// $select_3 = $_POST['select_3'];
+// $company_name = $_POST['company_name'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 $telephone = $_POST['telephone'];
-$country = $_POST['country'];
+$age = $_POST['age'];
 $terms = $_POST['terms'];
 $mail = new EMail;
 
@@ -60,16 +60,16 @@ $mail = new EMail;
 $mail->Server = "localhost";
 
 // Enter your FULL email address:
-$mail->Username = 'info@yourdomain.com';
+$mail->Username = 'dlorunfemi@gmail.com';
 
 // Enter the password for your email address:
-$mail->Password = 'YourPassword';
+$mail->Password = 'Icu!4cu101';
 
 // Enter the email address you wish to send FROM (Name is an optional friendly name):
-$mail->SetFrom("info@yourdomain.com", "Quotation from QUOTE");
+$mail->SetFrom("dlorunfemi@gmail.com", "Quotation from QUOTE");
 
 // Enter the email address you wish to send TO (Name is an optional friendly name):
-$mail->AddTo("info@yourdomain.com", "Quotation from QUOTE");
+$mail->AddTo("dlorunfemi@gmail.com", "Quotation from QUOTE");
 
 // You can add multiple recipients:
 // $mail->AddTo("someother2@address.com");
@@ -80,19 +80,19 @@ $mail->Subject = "Quotation from QUOTE";
 // Enter the content of your email message:
 $mail->Message = "
 DETAILS:\n
-1) What is your budget? $question_1
+1) What is your budget? $select_1
 2) What your poject need? $value_question_2
 Additional info: $addtional_info\n
 3) Answers to the following questions:
 If you already have an hosting plan, please define: $select_1
-If you need an hosting plan, please define which one: $select_2
-If you need a newsletter campaign, please define the provider you prefer: $select_3\n
+If you need an hosting plan, please define which one: 
+If you need a newsletter campaign, please define the provider you prefer: \n
 USER PERSONAL DETAILS:
 Firstname: $firstname
 Lastname: $lastname
 Email: $email
 Telephone: $telephone
-Country: $country
+Age: $age
 Terms accepted: $terms" . PHP_EOL . PHP_EOL;
 
 // Optional extras
@@ -105,13 +105,13 @@ $autoreply = new EMail;
 $autoreply->Server = "localhost";
 
 // Enter your FULL email address:
-$autoreply->Username = 'info@yourdomain.com';
+$autoreply->Username = 'dlorunfemi@gmail.com';
 
 // Enter the password for your email address:
-$autoreply->Password = 'YourPassword';
+$autoreply->Password = 'Icu!4cu101';
 
 // Enter the email address you wish to send FROM (Name is an optional friendly name):
-$autoreply->SetFrom("info@yourdomain.com", "QUOTE");
+$autoreply->SetFrom("dlorunfemi@gmail.com", "QUOTE");
 
 // Enter the email address you wish to send TO (Name is an optional friendly name):
 $autoreply->AddTo("$email");
@@ -133,7 +133,7 @@ $response = NULL;
 
 if (!$mail->Send())
 	{
-	$response = "Mailer Error: please contact support@quote.com " . $mail->ErrorInfo;
+	$response = "Mailer Error: please contact support@dew.com.ng " . $mail->ErrorInfo;
 	}
   else
 	{
@@ -292,5 +292,6 @@ class EMail
 }
 ?>
 <!-- END SEND MAIL SCRIPT -->
+
 </body>
 </html>
